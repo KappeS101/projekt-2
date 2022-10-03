@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+html {
+    font-size: 16px;
+}
+
+div, p, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e8e3bc;
+}
+
+.wrapper {
+    background:  rgb(83, 79, 126);
+    padding: 20px;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* justify-content: space-evenly; */
+    align-items: stretch;
+}
+
+figure {
+    border: 2px solid #ffffff;
+    padding: 4px;
+    flex-basis: 30%;
+    /*flex-shrink: 1;*/
+    /*flex-grow: 1;*/ 
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color:#ffffff;
+}
+
+body{
+    background: #f5f6fa;
+}
+
+.wrapper .left{
+    background: rgb(41, 39, 65);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 17.5%;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.wrapper .right{
+    background: rgb(41, 39, 65);
+    position: fixed;
+    top: 0;
+    left: 82.5%;
+    width: 17.5%;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.wrapper .center{
+    background: rgb(83, 79, 126);
+    position: fixed;
+    top:0;
+    left: 17.5%;
+    width:65%;
+    height: 100%;
+    padding: 20px 0;
+    transition: all o.5s ease;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
